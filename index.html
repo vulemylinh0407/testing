@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<head>
+	<title>Site name | Page name</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>CodePen - slick,js scaled slides</title>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header>
+		<!-- universal header/nav stuff should go here -->
+
+	</header>
+
+	<main>
+
+		<div class="parallax">
+
+		<div class="parallax-layer" data-speed="0.15">
+ 			<img class="background" src="img/big-art.jpg">
+ 		</div>
+
+		<div class="parallax-layer" data-speed="0.1">
+			<img class="character" src="img/Character.png">
+		</div>
+
+		</div>
+
+		<div class="parallax">
+
+		<div class="parallax-layer fixed">
+			<img class="logo" src="img/logo.png">
+		</div>
+
+		<div class="parallax-layer fixed">
+			<img class="spaceship" src="img/Spaceship.png">
+		</div>
+
+		<div class="parallax-layer big-title-text" data-speed="0.2">
+			<p class="coming-soon"> COMING SOON </p>
+			<h1 class="big-title">SPACE CHEFS <br> FROM SPACE</h1>
+		</div>
+
+		<div class="parallax-layer fixed">
+			<img class="fire" src="img/Fire.png">
+		</div>
+
+		<div class="parallax-layer fixed">
+			<img class="green" src="img/green.png">
+		</div>
+
+		<div class="parallax-layer fixed">
+			<h2 class="title">STORYLINE</h2>
+			<p class="storyline-description">A troupe of alien chefs travel the galaxy, cooking food for those who will have them. The only problem is they don't know how to cook!</p>
+			<p class="storyline-description">Unhappy with their inability to cook, the alien's manager tells them to retrieve a secret recipe book full of the best recipes located on a planet known as Earth.</p>
+			<p class="storyline-description">More specifically, the secret recipe book is located on a small farm and guarded by its two residents, file names: G-Ma and G-Pa. They are considered to be no threat to the mission.</p>
+			<p class="storyline-description">To limit escape, the aliens create a plan to abduct the human's home and move it in the middle of their cornfield. Little did the alien's know, someone had been listening to them the whole time and they were ready for their arrival.</p>
+		</div>
+
+		</div>
+
+		<!-- partial:index.partial.html -->
+		<div class="play-backdrop"></div>
+		<div class="play-button">
+		  <svg class="play-circles" viewBox="0 0 152 152">
+		    <circle class="play-circle-01" fill="none" stroke="black" stroke-width="3" stroke-dasharray="343 343" cx="76" cy="76" r="72.7"/>
+		    <circle class="play-circle-02" fill="none" stroke="black" stroke-width="3" stroke-dasharray="309 309" cx="76" cy="76" r="65.5"/>
+		  </svg>
+		  <div class="play-perspective">
+		    <button class="play-close"></button>
+		    <div class="play-triangle">
+		      <div class="play-video">
+		        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- partial -->
+		  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+
+ 		<div class="container">
+			<h2 class="character-title">CHARACTERS</h2>
+		</div>
+
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/G-Ma.png" style="width:35%">
+  <div class="text">
+Lorem ipsum: dolor sit amet, consectetur:  adipiscing elit incididunt: ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br> <br>
+Lorem ipsum: dolor sit amet, consectetur:  adipiscing elit incididunt: ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<div class="slider__warpper">
+
+  <div class="flex__container flex--pikachu flex--active" data-slide="1">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Character Showcase</p>
+        <h1 class="text--big">G - MA</h1>
+				<h3 class="description">AGE : <span class=""> Old </span></h3>
+				<h3 class="description">HEIGHT : <span class=""> 3 foot 4 inches</span></h3>
+				<h3 class="description">INTERESTS : <span class=""> Gardening, cooking, G-PA</span></h3>
+				<h3 class="description">OCCUPATION : <span class=""> Retired </span></h3>
+				<h3 class="description">QUOTES : <span class=""> "It's your time to shine" </span></h3>
+        <p class="text--normal">G - MA is a our games protagonist. A plucky lady with a few years behind her, though she doesn't show it. With her skills in gardening, and her trusty power washer she aims to defend her home from the coming invasion of alien chefs.</p>
+      </div>
+      <p class="text__background">G - MA</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="img/G-Ma.png" />
+  </div>
+
+  <div class="flex__container flex--piplup animate--start" data-slide="2">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+				<p class="text--sub">Character Showcase</p>
+				<h1 class="text--big">THE BOSS</h1>
+				<h3 class="description">AGE : <span class=""> Old </span></h3>
+				<h3 class="description">HEIGHT : <span class=""> 3 foot 4 inches</span></h3>
+				<h3 class="description">INTERESTS : <span class=""> Gardening, cooking, G-PA</span></h3>
+				<h3 class="description">OCCUPATION : <span class=""> Retired </span></h3>
+				<h3 class="description">QUOTES : <span class=""> "It's your time to shine" </span></h3>
+				<p class="text--normal">G - MA is a our games protagonist. A plucky lady with a few years behind her, though she doesn't show it. With her skills in gardening, and her trusty power washer she aims to defend her home from the coming invasion of alien chefs.</p>
+      </div>
+      <p class="text__background">THE BOSS</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="piplup__img" src="img/Boss-Alien.png" />
+  </div>
+
+  <div class="flex__container flex--blaziken animate--start" data-slide="3">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+				<p class="text--sub">Character Showcase</p>
+				<h1 class="text--big">G - MA</h1>
+				<h3 class="description">AGE : <span class=""> Old </span></h3>
+				<h3 class="description">HEIGHT : <span class=""> 3 foot 4 inches</span></h3>
+				<h3 class="description">INTERESTS : <span class=""> Gardening, cooking, G-PA</span></h3>
+				<h3 class="description">OCCUPATION : <span class=""> Retired </span></h3>
+				<h3 class="description">QUOTES : <span class=""> "It's your time to shine" </span></h3>
+				<p class="text--normal">G - MA is a our games protagonist. A plucky lady with a few years behind her, though she doesn't show it. With her skills in gardening, and her trusty power washer she aims to defend her home from the coming invasion of alien chefs.</p>
+      </div>
+      <p class="text__background">G - MA</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="img/G-Ma.png" />
+  </div>
+
+  <div class="flex__container flex--dialga animate--start" data-slide="4">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+				<p class="text--sub">Character Showcase</p>
+				<h1 class="text--big">G - MA</h1>
+				<h3 class="description">AGE : <span class=""> Old </span></h3>
+				<h3 class="description">HEIGHT : <span class=""> 3 foot 4 inches</span></h3>
+				<h3 class="description">INTERESTS : <span class=""> Gardening, cooking, G-PA</span></h3>
+				<h3 class="description">OCCUPATION : <span class=""> Retired </span></h3>
+				<h3 class="description">QUOTES : <span class=""> "It's your time to shine" </span></h3>
+				<p class="text--normal">G - MA is a our games protagonist. A plucky lady with a few years behind her, though she doesn't show it. With her skills in gardening, and her trusty power washer she aims to defend her home from the coming invasion of alien chefs.</p>
+      </div>
+      <p class="text__background">G - MA</p>
+    </div>
+
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="img/G-Ma.png" />
+  </div>
+
+  <div class="flex__container flex--zekrom animate--start" data-slide="5">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+				<p class="text--sub">Character Showcase</p>
+				<h1 class="text--big">G - MA</h1>
+				<h3 class="description">AGE : <span class=""> Old </span></h3>
+				<h3 class="description">HEIGHT : <span class=""> 3 foot 4 inches</span></h3>
+				<h3 class="description">INTERESTS : <span class=""> Gardening, cooking, G-PA</span></h3>
+				<h3 class="description">OCCUPATION : <span class=""> Retired </span></h3>
+				<h3 class="description">QUOTES : <span class=""> "It's your time to shine" </span></h3>
+				<p class="text--normal">G - MA is a our games protagonist. A plucky lady with a few years behind her, though she doesn't show it. With her skills in gardening, and her trusty power washer she aims to defend her home from the coming invasion of alien chefs.</p>
+      </div>
+      <p class="text__background">G - MA</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="img/G-Ma.png" />
+  </div>
+</div>
+
+<div class="slider__navi">
+  <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+  <a href="#" class="slide-nav" data-slide="2">piplup</a>
+  <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+  <a href="#" class="slide-nav" data-slide="4">dialga</a>
+  <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+
+
+
+	<!-- partial:index.partial.html -->
+	<section class="center slider">
+	  <div>
+	    <img src="img/MainMenuBackground.PNG">
+	  </div>
+	  <div>
+	    <img src="img/MainMenuBackground.PNG">
+	  </div>
+	  <div>
+	    <img src="img/MainMenuBackground.PNG">
+	  </div>
+	  <div>
+	    <img src="img/MainMenuBackground.PNG">
+	  </div>
+	  <div>
+	    <img src="img/MainMenuBackground.PNG">
+	  </div>
+	  </div>
+	</section>
+	<!-- partial -->
+	  <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
+
+	</main>
+
+	<footer>
+
+		<div>
+	    <img class="teamlogo" src="img/TeamLogo.png">
+	  </div>
+
+		<div class="email">
+			<span>&#9993;</span>
+			<a href="mailto:7gnoms@gmail.com?subject= Let's Collaborate">7gnoms@gmail.com</a>
+		</div>
+
+		<div class="social-media">
+			<img class="social" src="img/social-media.svg">
+		</div>
+
+	</footer>
+
+	<script src="scripts.js"></script>
+
+</body>
